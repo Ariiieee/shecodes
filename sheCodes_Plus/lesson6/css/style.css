@@ -1,0 +1,54 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	padding-top: 100px;
+}
+
+h1,
+h2 {
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	font-size: 42px;
+}
+
+header h2 {
+	color: #7359e2;
+	font-size: 32px;
+	margin-bottom: 32px;
+}
+
+section .sheCodes-motto {
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+#join-now-btn {
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #7359e2;
+	padding: 18px 24px;
+	font-size: 16px;
+	font-weight: 600;
+	background: #7359e2;
+	color: #fff;
+	border: none;
+	border-radius: 22px;
+	border: 1px solid #7359e2;
+	transition: all 0.3sec ease-in;
+	cursor: pointer;
+}
+
+.join-now-btn:hover {
+	background: #fff;
+	color: #7359e2;
+}
+
+footer .woman-image {
+	display: block;
+	margin: 50px auto;
+}

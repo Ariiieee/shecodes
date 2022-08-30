@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>She codes Home work</title>
+		<style>
+			body {
+				background: #fffdff;
+			}
+			.container {
+				text-align: center;
+				width: 40%;
+				margin: 0 auto;
+			}
+
+			.heading {
+				margin-bottom: 32px;
+			}
+
+			.head-emoji {
+				font-size: 30px;
+			}
+
+			.heading-text {
+				margin: 0;
+				font-size: 36px;
+				color: #1a64d6;
+			}
+
+			.thirteen {
+				font-size: 32px;
+				font-weight: 500;
+			}
+
+			.twenty-three {
+				font-size: 32px;
+				font-weight: 800;
+			}
+
+			.num {
+				font-size: 18px;
+			}
+			.bold-num {
+				font-size: 20px;
+				font-weight: 600;
+				color: #58544e;
+			}
+
+			.small-emoji {
+				font-size: 18px;
+			}
+
+			.day {
+				font-size: 24px;
+				font-weight: 700;
+				color: #020103;
+			}
+
+			.weather-day {
+				margin-bottom: 16px;
+				padding: 14px 24px;
+			}
+
+			.weather-day:hover {
+				background-color: #fffaef;
+				cursor: pointer;
+			}
+
+			button {
+				padding: 20px 24px;
+				font-size: 16px;
+				border-radius: 30px;
+				background-color: #1a64d6;
+				border: 1px solid #1a64d6;
+				color: #fff;
+				font-weight: 500;
+
+				transition: all 150ms ease-in-out;
+				margin-bottom: 10px;
+			}
+
+			button:hover {
+				background-color: #fff;
+				color: #1a64d6;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="heading">
+				<div class="head-emoji">🌤️</div>
+				<h1 class="heading-text">Currently 21&#176; in Tokyo</h1>
+				<div class="degree">
+					<span class="thirteen">13 &#176; </span>
+					<span class="twenty-three">/ 23 &#176; </span>
+				</div>
+			</div>
+
+			<div class="weather-day">
+				<span class="small-emoji">🌧️</span>
+				<span class="day">Tomorrow</span>
+				<p>
+					<span class="num">10&#176;</span>
+					<span class="bold-num">/ 22 &#176;</span>
+				</p>
+			</div>
+
+			<div class="weather-day">
+				<span class="small-emoji">⛅</span>
+				<span class="day">Saturday</span>
+				<p>
+					<span class="num">15&#176; </span>
+					<span class="bold-num">/ 17 &#176;</span>
+				</p>
+			</div>
+
+			<div class="weather-day">
+				<span class="small-emoji">☀️</span>
+				<span class="day">Sunday</span>
+				<p>
+					<span class="num">25&#176;</span>
+					<span class="bold-num">/ 28 &#176; </span>
+				</p>
+			</div>
+
+			<button class="change-city">Change City</button>
+			<p class="name">code by Oluwafunmilayo Dada</p>
+		</div>
+		<script>
+			let degIcon = "&#176";
+			let weatherIcon = document.querySelector(".head-emoji");
+			let headingText = document.querySelector(".heading-text");
+			let changeCityBtn = document.querySelector(".change-city");
+
+			function changeWeatherLoc() {
+				let userCity = prompt("What city do you live in?");
+				let userTemp = Number(prompt("What temperature is it?"));
+
+				if (userTemp >= 0) {
+					weatherIcon.innerHTML = "😃";
+					headingText.innerHTML =
+						"Currently " + userTemp + degIcon + " in " + userCity;
+				} else {
+					weatherIcon.innerHTML = "😞";
+					headingText.innerHTML =
+						"Currently " + userTemp + degIcon + " in " + userCity;
+				}
+			}
+
+			changeCityBtn.addEventListener("click", changeWeatherLoc);
+		</script>
+	</body>
+</html>

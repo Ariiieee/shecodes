@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Yum's Cupcakes</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Montserrat+Alternates:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				font-family: "Montserrat Alternates", sans-serif;
+			}
+
+			.container {
+				background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+				padding: 28px;
+				margin: 14px auto;
+				max-width: 600px;
+				border-radius: 4px;
+			}
+			h1 {
+				text-align: center;
+
+				font-size: 44px;
+				font-weight: 700;
+				color: #8c0909;
+			}
+
+			h2 {
+				text-align: center;
+				font-size: 30px;
+				font-weight: 500;
+				color: #8c0909;
+			}
+			hr {
+				color: #b90b0b;
+			}
+
+			.cup-cake {
+				width: 300px;
+				margin: 14px auto;
+				display: block;
+				text-align: center;
+				border-radius: 4px;
+			}
+
+			.cupcake-history {
+				line-height: 1.5;
+				font-size: 20px;
+				margin-bottom: 16px;
+				color: #190f05;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.history-link {
+				display: block;
+				font-size: 16px;
+				margin-bottom: 24px;
+				font-weight: 600;
+				color: #8c0909;
+			}
+
+			.history-link:hover {
+				text-decoration: underline;
+			}
+
+			.try-cupcake {
+				display: block;
+				margin: 0 auto;
+				padding: 24px 48px;
+				font-size: 18px;
+				font-weight: 600;
+				border-radius: 10px;
+				border: none;
+				box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+				transition: all 0.3s ease-in-out;
+				cursor: pointer;
+				background: #8c0909;
+				color: #f4f4f4;
+			}
+
+			.try-cupcake:hover {
+				color: #b90b0b;
+				background: #f4f4f4;
+			}
+
+			footer {
+				margin: 0;
+				text-align: center;
+				font-size: 12px;
+			}
+
+			.dev {
+				color: #b90b0b;
+				font-size: 16px;
+				font-weight: 500;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1><strong>Cupcakes</strong></h1>
+			<h2>Sumptuous Cupcakes</h2>
+			<hr />
+
+			<img
+				src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/040/965/original/cupcakie.jpg?1658214023"
+				class="cup-cake"
+				alt="cupcake"
+			/>
+			<hr />
+			<p class="cupcake-history">
+				The earliest extant description of what is now often called a
+				cupcake was in 1796, when a recipe for "a light cake to bake in
+				small cups" was written in American Cookery by Amelia Simmons.
+				The earliest extant documentation of the term cupcake itself was
+				in "Seventy-five Receipts for Pastry, Cakes, and Sweetmeats" in
+				1828 in Eliza Leslie's Receipts cookbook.
+				<br />
+				<br />
+				In the early 19th century, there were two different uses for the
+				term cup cake or cupcake. In previous centuries, before muffin
+				tins were widely available, the cakes were often baked in
+				individual pottery cups, ramekins, or molds and took their name
+				from the cups they were baked in.
+			</p>
+
+			<a
+				href="https://en.wikipedia.org/wiki/Cupcake"
+				target="_blank"
+				class="history-link"
+				>History of Cupcake &#8594;
+			</a>
+			<button class="try-cupcake">Try a cupcake 🙂</button>
+		</div>
+		<footer>
+			<p>
+				Coded by <span class="dev"><em>Oluwafunmilayo Dada</em></span>
+			</p>
+		</footer>
+		<script>
+			let cupcakeBtn = document.querySelector(".try-cupcake");
+			function askName() {
+				let userName = prompt("What is your name?");
+				alert(
+					"Thanks " +
+						userName +
+						"," +
+						" we will be in touch for a while, Meanwhile do try our sumptuous cupcakes 🧁"
+				);
+			}
+			cupcakeBtn.addEventListener("click", askName);
+		</script>
+	</body>
+</html>

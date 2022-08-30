@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SheCodes week 3</title>
+		<style>
+			h1 {
+				text-align: center;
+			}
+		</style>
+		<script>
+			// let userName = prompt("What is your name?");
+			// userName = userName.trim();
+			// if (userName === "") {
+			// 	alert("Too bad for you ");
+			// } else {
+			// 	alert("Welcome " + userName);
+			// }
+
+			// const cities = ["Lagos", "Osun", "Imo"];
+			// function showCity(city) {
+			// 	console.log(city);
+			// }
+			// cities.forEach(showCity);
+			let weekDays1 = [
+				"Sunday",
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+			];
+			console.log("****All days of the week****");
+			console.log(weekDays1);
+
+			// Challenge 2
+			// Log ‘Monday’ and ‘Sunday’
+			let weekDays2 = [
+				"Sunday",
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+			];
+			console.log("****logging only Monday and Sunday***");
+			console.log(weekDays2[1]);
+			console.log(weekDays2[0]);
+
+			// Challenge 3
+			// Change ‘Sunday’ by ‘Funday’
+			// Log the array
+			console.log("***changed sunday to funday****");
+			weekDays2[0] = "Funday";
+			console.log(weekDays2);
+
+			// Challenge 4
+			// Remove Monday and Tuesday
+			// Log the array
+			let weekDays3 = [
+				"Sunday",
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+			];
+			console.log("*** Remove Monday and Tuesday ***");
+			weekDays3.splice(1, 2);
+			console.log(weekDays3);
+
+			// Challenge 5
+			// Log every day of the week this way:`Temperature on Monday is 18 degrees’
+			let weekDays4 = [
+				"Sunday",
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+			];
+			console.log("***log everyday of the week in a sentence**");
+			weekDays4.forEach((day) =>
+				console.log(`Temperature on ${day} is 18 degrees`)
+			);
+			//challenge 5
+			let forecast = [
+				{
+					day: "Sunday",
+					temperature: 9,
+				},
+				{
+					day: "Monday",
+					temperature: 1,
+				},
+
+				{
+					day: "Tuesday",
+					temperature: 5,
+				},
+
+				{
+					day: "Wednesday",
+					temperature: 7,
+				},
+				{
+					day: "Thursday",
+					temperature: 2,
+				},
+				{
+					day: "Friday",
+					temperature: 6,
+				},
+				{
+					day: "Saturday",
+					temperature: 4,
+				},
+			];
+			console.log(forecast);
+
+			console.log("is windy challenge **********");
+			let speed = prompt("What's the speed today?");
+			let unit = prompt("What unit?");
+
+			function isWindy(speed, unit) {
+				if (speed > 5 && unit === "metric") {
+					console.log("true");
+				} else {
+					console.log("false");
+				}
+			}
+
+			isWindy(2, "imperial");
+			isWindy(20, "metric");
+		</script>
+	</head>
+	<body>
+		<h1>SheCodes Challenge</h1>
+	</body>
+</html>
